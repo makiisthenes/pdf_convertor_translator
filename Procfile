@@ -1,1 +1,1 @@
-web: streamlit run --server.port 8501 app.py
+web: streamlit run --server.port 8501 Home.py
