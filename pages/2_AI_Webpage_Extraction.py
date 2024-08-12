@@ -1,4 +1,5 @@
 import streamlit as st
+import requests
 
 JINA_BASE_URL = "https://r.jina.ai/"
 st.set_page_config(page_title="AI Website Extraction", layout="wide")
