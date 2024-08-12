@@ -1,5 +1,5 @@
 import streamlit as st
-import requests
+import requests, pyperclip
 
 JINA_BASE_URL = "https://r.jina.ai/"
 st.set_page_config(page_title="AI Website Extraction", layout="wide")
@@ -32,7 +32,8 @@ def main():
 
     txt = st.text_area("Summarised Webpage", summarised_webcontent)
     # Add copy button, to copy content from text_area.
-    st.button("Copy to Clipboard", lambda: st.write(txt))
+    st.button("Copy to Clipboard", pyperclip.copy(txt))
+    st.success("Content copied to clipboard")
 
     st.markdown("---")
 
