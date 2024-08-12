@@ -31,6 +31,9 @@ def main():
     summarised_webcontent = scrape_jina_ai(url)
 
     txt = st.text_area("Summarised Webpage", summarised_webcontent)
+    # Add copy button, to copy content from text_area.
+    st.button("Copy to Clipboard", lambda: st.write(txt))
+
     st.markdown("---")
 
 
