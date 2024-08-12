@@ -22,7 +22,7 @@ def scrape_jina_ai(url: str) -> str:
   return response.text
 
 def main():
-    st.header("AI Website Extraction")
+    st.header("AI Website Extraction v1.1")
     st.subheader("This tool is used to extract key information from website, via Jina AI")
     st.write("Created by Michael Peres 12/08/2024")
 
@@ -30,7 +30,7 @@ def main():
 
     summarised_webcontent = scrape_jina_ai(url)
 
-    st.text_area("Summarised Webpage", summarised_webcontent)
+    txt = st.text_area("Summarised Webpage", summarised_webcontent)
     st.markdown("---")
 
 
