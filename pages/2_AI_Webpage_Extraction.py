@@ -30,7 +30,7 @@ def main():
 
     summarised_webcontent = scrape_jina_ai(url)
 
-    st.write(summarised_webcontent)
+    st.text_area(summarised_webcontent)
 
 
 if __name__ == "__main__":
