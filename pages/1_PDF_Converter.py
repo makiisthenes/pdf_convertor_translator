@@ -22,6 +22,7 @@ st.markdown("""
 
 # Your existing functions (translate_text, etc.) go here
 
+
 def main():
     st.header("PDF to Text Parser, Converter, and Translator")
     st.subheader("This tool is used to parse, convert, and translate PDF files.")
